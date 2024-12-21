@@ -1,5 +1,5 @@
 require("dotenv").config();
-const url = `${process.env.URL_BASE}/index.php?page=upload`;
+const url = `http://10.11.100.150/index.php?page=upload`;
 
 const fileInput = new File(["file content"], "file.txt", {
   type: "image/jpeg",

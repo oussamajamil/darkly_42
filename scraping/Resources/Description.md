@@ -43,7 +43,7 @@ def scrapping_recursive(url):
 				scrapping_recursive(url + final_link)
 		f.close()
 
-url = "http://192.168.64.6/.hidden/"
+url = "http://10.11.100.150/.hidden/"
 scrapping_recursive(url)
 ```
 

