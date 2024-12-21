@@ -1,5 +1,5 @@
 # Cookie Forgery
- 
+
 ## flag
 
 ```
@@ -27,4 +27,3 @@ The application uses the `I_am_admin` cookie to determine the user's privileges.
 3. **Secure Cookies**: Always use secure cookies with the `HttpOnly` and `Secure` flags to prevent client-side access and ensure they are only transmitted over HTTPS.
 4. **Regular Security Audits**: Regularly audit and test your application for security vulnerabilities to identify and fix potential issues before they can be exploited.
 5. **Input Validation**: Validate and sanitize all user inputs to prevent injection attacks and other forms of exploitation.
-6. **Least Privilege Principle**: Follow the principle of least privilege by granting users the minimum level of access necessary for their role.

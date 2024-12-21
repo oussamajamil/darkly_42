@@ -1,7 +1,7 @@
 # Insecure Dropdown Injection
 
-
 ## flag
+
 ```
 03a944b434d5baff05f46c4bede5792551a2595574bcafc9a6e25f67c382ccaa
 ```
@@ -20,7 +20,4 @@ The application fails to validate dropdown values on the server side, assuming t
 
 ## Prevention
 
-1. Always validate form inputs server-side, even for dropdowns
-2. Use whitelisting to only accept expected values
-3. Implement proper input sanitization
-4. Use parameterized queries for database operations
+1. **Server-Side Validation**: Always validate user inputs on the server side to prevent injection attacks and other forms of exploitation.
